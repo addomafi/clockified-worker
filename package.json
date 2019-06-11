@@ -1,6 +1,6 @@
 {
-  "name": "clokified-worker",
-  "version": "0.0.1",
+  "name": "clockified-worker",
+  "version": "1.0.1",
   "description": "A tool to reduce the job to add time entries",
   "main": "clokified.js",
   "scripts": {
