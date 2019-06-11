@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var argv = require( 'argv' );
 var path = require('path');
-var clk = require(path.join(__dirname, '.', 'clockified.js'))
+var clk = require(path.join(__dirname, '../', 'clockified.js'))
 
 argv.option([
     {
