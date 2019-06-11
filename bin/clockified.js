@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+var argv = require( 'argv' );
+var path = require('path');
+var clk = require(path.join(__dirname, '.', 'clockified.js'))
+
+argv.option([
+    {
+        name: 'workspaceId',
+        type: 'string',
+        description: 'Workspace ID'
+    },
+    {
+        name: 'projectId',
+        type: 'string',
+        description: 'Project ID'
+    },
+    {
+        name: 'apiKey',
+        description: 'API Key',
+        type: 'string'
+    },
+    {
+        name: 'startFrom',
+        description: 'Start date of time sheet, e.g.: YYYY-MM-DD',
+        type: 'string'
+    },
+    {
+        name: 'untilTo',
+        description: 'End date of time sheet, e.g.: YYYY-MM-DD',
+        type: 'string'
+    },
+    {
+        name: 'startWorkingHour',
+        description: 'Start working hour',
+        type: 'int'
+    },
+    {
+        name: 'workingHours',
+        description: 'Amount of working hours per day',
+        type: 'int'
+    }
+]);
+
+var args = argv.run()
+var params = {}
+var i=0;Object.keys(args.options).forEach(key=>params[key]=args.targets[i++])
+clk(params)
