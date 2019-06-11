@@ -9,7 +9,6 @@ moment.updateLocale('pt-BR', {
    workingWeekdays: [1, 2, 3, 4, 5]
 });
 
-// request Add Time
 module.exports = function(params, callback) {
     'use strict';
 
