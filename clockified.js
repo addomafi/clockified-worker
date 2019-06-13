@@ -12,11 +12,11 @@ moment.updateLocale('pt-BR', {
 module.exports = function(params, callback) {
     'use strict';
 
-    extend(params, {
+    extend({
       "startWorkingHour": 9,
       "workingHours": 8,
       "description": "Arquitetura"
-    })
+    }, params)
 
     const httpRequest = {
         uri: `https://api.clockify.me/api/v1/workspaces/${params.workspaceId}/time-entries`,
