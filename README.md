@@ -10,7 +10,7 @@ It's simple as this:
 ```
 npm install -g clockified-worker
 
-clockified --workspaceId your_workspace_id --projectId your_project_id --startFrom 2019-05-04 --untilTo 2019-05-31 --apiKey your_api_key
+clockified --workspaceId your_workspace_id --projectId your_project_id --description your_job_description --startFrom 2019-05-04 --untilTo 2019-05-31 --apiKey your_api_key
 ```
 
 If you need help, just type:
