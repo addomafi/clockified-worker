@@ -15,6 +15,11 @@ argv.option([
         description: 'Project ID'
     },
     {
+        name: 'description',
+        type: 'string',
+        description: 'Description of what you are working.'
+    },
+    {
         name: 'apiKey',
         description: 'API Key',
         type: 'string'
